@@ -16,6 +16,10 @@ class BrewController {
         self.storage = storage
 
         brews = BrewController.load(from: storage)
+
+        if brews.isEmpty {
+            fillTestData()
+        }
     }
 
     private static func load(from storage: UserDefaults) -> [Brewery] {
@@ -47,8 +51,8 @@ class BrewController {
 
 extension BrewController {
     func fillTestData() {
-//        store(brew: Brewery())
-//        store(brew: Brewery(beans: .Columbia, temp: 100, time: 3 * 60, date: Date()))
-//        store(brew: Brewery(beans: .Salvador, temp: 80, time: 22, date: Date()))
+        store(brew: Brewery())
+        store(brew: Brewery(beans: .Columbia, temp: 100, time: 3 * 60, date: Date()))
+        store(brew: Brewery(beans: .Salvador, temp: 80, time: 22, date: Date()))
     }
 }
