@@ -15,6 +15,8 @@
 		2B7DECC3205D468E000E8FC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7DECC1205D468E000E8FC2 /* LaunchScreen.storyboard */; };
 		2B7DECCE205D468E000E8FC2 /* Puppy_BrewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7DECCD205D468E000E8FC2 /* Puppy_BrewTests.swift */; };
 		2B7DECD9205D468E000E8FC2 /* Puppy_BrewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7DECD8205D468E000E8FC2 /* Puppy_BrewUITests.swift */; };
+		2B86064D205D5FD40022D3B1 /* BrewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86064C205D5FD40022D3B1 /* BrewController.swift */; };
+		2B86064F205D6F770022D3B1 /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86064E205D6F770022D3B1 /* Brewery.swift */; };
 		80093A32DA771AABB53F98B7 /* Pods_Puppy_BrewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5869F9A4205DCA85501D1F87 /* Pods_Puppy_BrewUITests.framework */; };
 		CD8466F8C0FD9C6718062A86 /* Pods_Puppy_Brew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7831836631F4C4251070AF88 /* Pods_Puppy_Brew.framework */; };
 		D8FB66F59E8327BF16FBC8DA /* Pods_Puppy_BrewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0EBB8B5AD57AF53FDAE6A04 /* Pods_Puppy_BrewTests.framework */; };
@@ -52,6 +54,8 @@
 		2B7DECD4205D468E000E8FC2 /* Puppy BrewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Puppy BrewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7DECD8205D468E000E8FC2 /* Puppy_BrewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puppy_BrewUITests.swift; sourceTree = "<group>"; };
 		2B7DECDA205D468E000E8FC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B86064C205D5FD40022D3B1 /* BrewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrewController.swift; path = Controllers/BrewController.swift; sourceTree = "<group>"; };
+		2B86064E205D6F770022D3B1 /* Brewery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Brewery.swift; path = Models/Brewery.swift; sourceTree = "<group>"; };
 		543E3A90AD031B5EF20CEE81 /* Pods-Puppy BrewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puppy BrewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Puppy BrewUITests/Pods-Puppy BrewUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5869F9A4205DCA85501D1F87 /* Pods_Puppy_BrewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Puppy_BrewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		762D55E0C429E8351BE685BB /* Pods-Puppy BrewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puppy BrewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Puppy BrewTests/Pods-Puppy BrewTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 		2B7DECB5205D468E000E8FC2 /* Puppy Brew */ = {
 			isa = PBXGroup;
 			children = (
+				2B86064B205D5FAE0022D3B1 /* Controllers */,
+				2B86064A205D5EE10022D3B1 /* Models */,
 				2B7DECB6205D468E000E8FC2 /* AppDelegate.swift */,
 				2B7DECB8205D468E000E8FC2 /* FirstViewController.swift */,
 				2B7DECBA205D468E000E8FC2 /* SecondViewController.swift */,
@@ -143,6 +149,22 @@
 				2B7DECDA205D468E000E8FC2 /* Info.plist */,
 			);
 			path = "Puppy BrewUITests";
+			sourceTree = "<group>";
+		};
+		2B86064A205D5EE10022D3B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B86064E205D6F770022D3B1 /* Brewery.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2B86064B205D5FAE0022D3B1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B86064C205D5FD40022D3B1 /* BrewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		4BA80F003E0224EDA3458084 /* Pods */ = {
@@ -459,7 +481,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B7DECBB205D468E000E8FC2 /* SecondViewController.swift in Sources */,
+				2B86064D205D5FD40022D3B1 /* BrewController.swift in Sources */,
 				2B7DECB7205D468E000E8FC2 /* AppDelegate.swift in Sources */,
+				2B86064F205D6F770022D3B1 /* Brewery.swift in Sources */,
 				2B7DECB9205D468E000E8FC2 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
