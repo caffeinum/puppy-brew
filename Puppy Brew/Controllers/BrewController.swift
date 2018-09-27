@@ -7,10 +7,13 @@
 //
 
 import Foundation
+import CoreBluetooth
 
 class BrewController {
     var storage: UserDefaults
     private var brews: [Brewery]
+    
+    var serial: BluetoothSerial!
 
     init(storage: UserDefaults = .standard) {
         self.storage = storage
@@ -20,6 +23,8 @@ class BrewController {
         if brews.isEmpty {
             fillTestData()
         }
+        
+//        serial = BluetoothSerial(delegate: self)
     }
 
     private static func load(from storage: UserDefaults) -> [Brewery] {
@@ -46,6 +51,21 @@ class BrewController {
     func get() -> [Brewery] {
         print("get brews:", brews)
         return brews
+    }
+}
+
+extension BrewController: BluetoothSerialDelegate {
+    func serialDidChangeState() {
+        print("change state: power =", serial.isPoweredOn)
+    }
+    
+    func serialDidDisconnect(_ peripheral: CBPeripheral, error: NSError?) {
+        print("error", error)
+    }
+    
+    /// Called when a message is received
+    func serialDidReceiveString(_ message: String) {
+        print("new message", message)
     }
 }
 

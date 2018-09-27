@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B467A8D20C40A7500C4FF02 /* BluetoothSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B467A8C20C40A7500C4FF02 /* BluetoothSerial.swift */; };
+		2B467A8F20C40C3800C4FF02 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B467A8E20C40C3800C4FF02 /* ScannerViewController.swift */; };
+		2B467A9320C40D4700C4FF02 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B467A9120C40D4700C4FF02 /* MBProgressHUD.m */; };
 		2B7DECB7205D468E000E8FC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7DECB6205D468E000E8FC2 /* AppDelegate.swift */; };
 		2B7DECB9205D468E000E8FC2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7DECB8205D468E000E8FC2 /* FirstViewController.swift */; };
 		2B7DECBB205D468E000E8FC2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7DECBA205D468E000E8FC2 /* SecondViewController.swift */; };
@@ -40,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B467A8C20C40A7500C4FF02 /* BluetoothSerial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothSerial.swift; sourceTree = "<group>"; };
+		2B467A8E20C40C3800C4FF02 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		2B467A9020C40D4600C4FF02 /* Puppy Brew-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Puppy Brew-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B467A9120C40D4700C4FF02 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		2B467A9220C40D4700C4FF02 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		2B7DECB3205D468E000E8FC2 /* Puppy Brew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Puppy Brew.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7DECB6205D468E000E8FC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B7DECB8205D468E000E8FC2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B467A8B20C40A6400C4FF02 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				2B467A8C20C40A7500C4FF02 /* BluetoothSerial.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
 		2B7DECAA205D468E000E8FC2 = {
 			isa = PBXGroup;
 			children = (
@@ -120,15 +136,20 @@
 		2B7DECB5205D468E000E8FC2 /* Puppy Brew */ = {
 			isa = PBXGroup;
 			children = (
+				2B467A9220C40D4700C4FF02 /* MBProgressHUD.h */,
+				2B467A9120C40D4700C4FF02 /* MBProgressHUD.m */,
+				2B467A8B20C40A6400C4FF02 /* Library */,
 				2B86064B205D5FAE0022D3B1 /* Controllers */,
 				2B86064A205D5EE10022D3B1 /* Models */,
 				2B7DECB6205D468E000E8FC2 /* AppDelegate.swift */,
 				2B7DECB8205D468E000E8FC2 /* FirstViewController.swift */,
 				2B7DECBA205D468E000E8FC2 /* SecondViewController.swift */,
+				2B467A8E20C40C3800C4FF02 /* ScannerViewController.swift */,
 				2B7DECBC205D468E000E8FC2 /* Main.storyboard */,
 				2B7DECBF205D468E000E8FC2 /* Assets.xcassets */,
 				2B7DECC1205D468E000E8FC2 /* LaunchScreen.storyboard */,
 				2B7DECC4205D468E000E8FC2 /* Info.plist */,
+				2B467A9020C40D4600C4FF02 /* Puppy Brew-Bridging-Header.h */,
 			);
 			path = "Puppy Brew";
 			sourceTree = "<group>";
@@ -201,8 +222,6 @@
 				2B7DECAF205D468E000E8FC2 /* Sources */,
 				2B7DECB0205D468E000E8FC2 /* Frameworks */,
 				2B7DECB1205D468E000E8FC2 /* Resources */,
-				ED985A5387B093B0EE62FAE3 /* [CP] Embed Pods Frameworks */,
-				10A196097C19DEAF1B5567B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,8 +240,6 @@
 				2B7DECC5205D468E000E8FC2 /* Sources */,
 				2B7DECC6205D468E000E8FC2 /* Frameworks */,
 				2B7DECC7205D468E000E8FC2 /* Resources */,
-				5FB9C4C9CF598D275AD78521 /* [CP] Embed Pods Frameworks */,
-				5468F2715E165332F9EE68C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,8 +259,6 @@
 				2B7DECD0205D468E000E8FC2 /* Sources */,
 				2B7DECD1205D468E000E8FC2 /* Frameworks */,
 				2B7DECD2205D468E000E8FC2 /* Resources */,
-				BE08A23CB8C355C5BA2E1CE0 /* [CP] Embed Pods Frameworks */,
-				CD4973E944974E62ABA62C8E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +282,7 @@
 				TargetAttributes = {
 					2B7DECB2205D468E000E8FC2 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
 					2B7DECC8205D468E000E8FC2 = {
@@ -329,21 +345,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		10A196097C19DEAF1B5567B8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Puppy Brew/Pods-Puppy Brew-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4DA23AFF4B23FF8E207A20E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,36 +361,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5468F2715E165332F9EE68C1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Puppy BrewTests/Pods-Puppy BrewTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5FB9C4C9CF598D275AD78521 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Puppy BrewTests/Pods-Puppy BrewTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		64F6AA6310333EDECEE3172B /* [CP] Check Pods Manifest.lock */ = {
@@ -410,36 +381,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BE08A23CB8C355C5BA2E1CE0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Puppy BrewUITests/Pods-Puppy BrewUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD4973E944974E62ABA62C8E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Puppy BrewUITests/Pods-Puppy BrewUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E9ECC6C0AC9FCB8D798150D7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -458,21 +399,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ED985A5387B093B0EE62FAE3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Puppy Brew/Pods-Puppy Brew-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -480,11 +406,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B467A8F20C40C3800C4FF02 /* ScannerViewController.swift in Sources */,
 				2B7DECBB205D468E000E8FC2 /* SecondViewController.swift in Sources */,
 				2B86064D205D5FD40022D3B1 /* BrewController.swift in Sources */,
+				2B467A8D20C40A7500C4FF02 /* BluetoothSerial.swift in Sources */,
 				2B7DECB7205D468E000E8FC2 /* AppDelegate.swift in Sources */,
 				2B86064F205D6F770022D3B1 /* Brewery.swift in Sources */,
 				2B7DECB9205D468E000E8FC2 /* FirstViewController.swift in Sources */,
+				2B467A9320C40D4700C4FF02 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,12 +580,15 @@
 			baseConfigurationReference = D23B38640D320247CA40DF0A /* Pods-Puppy Brew.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AE86HBQRXP;
 				INFOPLIST_FILE = "Puppy Brew/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.caffeinum.Puppy-Brew";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Puppy Brew/Puppy Brew-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -667,12 +599,14 @@
 			baseConfigurationReference = B5B3FD71F7C36A05EC6C6A9B /* Pods-Puppy Brew.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AE86HBQRXP;
 				INFOPLIST_FILE = "Puppy Brew/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.caffeinum.Puppy-Brew";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Puppy Brew/Puppy Brew-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
